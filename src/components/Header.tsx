@@ -19,8 +19,8 @@ const Header = ({ showhero = false }: Props) => {
 
   return (
     <>
-      <div className="border-b-2 border-b-primary py-6">
-        <div className="container mx-auto flex justify-between items-center">
+      <div className="border-b-2 border-b-primary py-6 ">
+        <div className=" mx-auto flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-primary">
             <Link href="/">Find-Resto</Link>
           </h2>

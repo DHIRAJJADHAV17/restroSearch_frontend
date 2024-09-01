@@ -36,8 +36,8 @@ export default function Home() {
             <SearchBar data={setRestaurantData} />
           </div>
           <div className="grid md:grid-cols-4 gap-5">
-            {restaurantData.map((data) => (
-              <CardItems detail={data} />
+            {restaurantData.map((data, index) => (
+              <CardItems key={index} detail={data} />
             ))}
           </div>
         </div>

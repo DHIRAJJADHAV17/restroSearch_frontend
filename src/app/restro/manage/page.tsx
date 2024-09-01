@@ -66,6 +66,9 @@ const Page = () => {
     },
   });
 
+  // Call the hooks outside the event handlers
+  const createRestro = useCreateRestro;
+
   useEffect(() => {
     const fetchRestaurant = async () => {
       try {
@@ -80,7 +83,7 @@ const Page = () => {
     fetchRestaurant();
   }, [form]);
 
-  const onSubmit = async (data: RestaurantFormData) => {
+  const OnSubmit = async (data: RestaurantFormData) => {
     try {
       const formData = new FormData();
       formData.append("restaurantName", data.restaurantName);
@@ -119,7 +122,7 @@ const Page = () => {
       if (isExistingRestaurant) {
         result = await updateRestro(formData);
       } else {
-        result = await useCreateRestro(formData);
+        result = await createRestro(formData);
       }
       console.log(result);
     } catch (error) {
@@ -130,7 +133,7 @@ const Page = () => {
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
+        onSubmit={form.handleSubmit(OnSubmit)}
         className="space-y-8 bg-gray-50 p-10 rounded-lg"
       >
         <DetailsSection />

@@ -25,13 +25,13 @@ const formSchema = z.object({
 });
 
 export type AdminFormData = z.infer<typeof formSchema>;
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const form = useForm<AdminFormData>({
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async (data: AdminFormData) => {
+  const OnSubmit = async (data: AdminFormData) => {
     try {
       const result = await useCreateAdmin(data);
 
@@ -45,7 +45,7 @@ const page = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
+      <form onSubmit={form.handleSubmit(OnSubmit)}>
         <div className="flex items-center justify-center mt-28 ">
           <div className="w-96 border rounded bg-white px-7 py-10 shadow-2xl">
             <h4 className="text-2xl mb-7">SignUp </h4>
@@ -117,4 +117,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

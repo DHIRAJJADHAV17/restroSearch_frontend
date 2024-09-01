@@ -41,8 +41,8 @@ const CardItems = ({ detail }: Props) => {
         <CardFooter className="flex flex-col items-start">
           <p className="mb-2">Rating:{totalrating}</p>
           <ul className="flex space-x-2">
-            {detail.cuisines.map((cuisine: string) => (
-              <li>{cuisine}</li>
+            {detail.cuisines.map((cuisine: string, index: number) => (
+              <li key={index}>{cuisine}</li>
             ))}
             ...
           </ul>

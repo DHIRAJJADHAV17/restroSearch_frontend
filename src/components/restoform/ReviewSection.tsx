@@ -25,6 +25,7 @@ const ReviewSection = () => {
           <FormItem className="flex flex-col gap-2">
             {fields.map((_, index) => (
               <ReviewItemInput
+                key={index}
                 index={index}
                 removeReviewItem={() => remove(index)}
               />
