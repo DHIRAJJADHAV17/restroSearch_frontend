@@ -36,10 +36,13 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Pass the reset function as a prop */}
-      <Header showhero={!selectedRestaurant} onclick={resetSelection} />
+      <Header showhero={!selectedRestaurant} />
       <div className="container mx-auto flex-1 py-10">
-        {selectedRestaurant ? ( // Check if a restaurant is selected
-          <RestroPageClient restaurant={selectedRestaurant} /> // Show restaurant details if a restaurant is selected
+        {selectedRestaurant ? (
+          <RestroPageClient
+            restaurant={selectedRestaurant}
+            onclick={resetSelection}
+          />
         ) : (
           <div className="flex flex-col gap-12">
             <div className="md:px-32 bg-gray-100 rounded-lg shadow-md py-8 flex flex-col gap-5 text-center -mt-8">
