@@ -1,3 +1,129 @@
+Read the Docs: documentation simplified
+=======================================
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Getting started
+
+   /tutorial/index
+   /intro/getting-started-with-sphinx
+   /intro/getting-started-with-mkdocs
+   /intro/import-guide
+   /examples
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Project setup and configuration
+
+   /config-file/index
+   /config-file/v2
+   /automation-rules
+   /guides/reproducible-builds
+   /addons
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Build process
+
+   /builds
+   /build-customization
+   /reference/git-integration
+   /pull-requests
+   /build-notifications
+   /environment-variables
+   /reference/environment-variables
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Hosting documentation
+
+   /versions
+   /subprojects
+   /localization
+   /versioning-schemes
+   /custom-domains
+   /canonical-urls
+   /reference/cdn
+   /reference/sitemaps
+   /reference/404-not-found
+   /reference/robots
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Reading documentation
+
+   /downloadable-documentation
+   /guides/embedding-content
+   /server-side-search/index
+   /server-side-search/syntax
+   /flyout-menu
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Maintaining projects
+
+   /user-defined-redirects
+   /reference/analytics
+   /security-log
+   /badges
+   /explanation/documentation-structure
+   /guides/best-practice/links
+   /security-implications
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Business features
+
+   /commercial/index
+   /commercial/organizations
+   /commercial/single-sign-on
+   /commercial/sharing
+   /commercial/subscriptions
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: How-to guides
+
+   Project setup and configuration </guides/setup/index>
+   Build process </guides/build/index>
+   Upgrading and maintaining projects </guides/maintenance/index>
+   Content, themes and SEO </guides/content/index>
+   Security and access </guides/access/index>
+   Account management </guides/management/index>
+   Best practice </guides/best-practice/index>
+   Troubleshooting problems </guides/troubleshooting/index>
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Reference
+
+   /api/index
+   /faq
+   /changelog
+   /about/index
+   Developer Documentation <https://dev.readthedocs.io>
+   Read the Docs website <https://about.readthedocs.com>
+
+
+
+
+
+
+
+
+
+
+
+
 Frontend Workflow Documentation
 ===============================
 
